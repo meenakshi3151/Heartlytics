@@ -1,7 +1,11 @@
-setuptools>=68.0.0
-wheel
 build
-setuptools-scm
+pip>=24.2
+setuptools>=68.0.0
+wheel>=0.44.0
+
+numpy==2.1.2
+cython==3.0.11
+scikit-learn==1.5.2
 absl-py==2.3.1
 astunparse==1.6.3
 blinker==1.9.0
@@ -27,7 +31,6 @@ MarkupSafe==3.0.3
 mdurl==0.1.2
 ml_dtypes==0.5.3
 namex==0.1.0
-numpy>=2.1.0,<2.4.0
 opt_einsum==3.4.0
 optree==0.17.0
 packaging==25.0
@@ -39,7 +42,6 @@ python-dateutil==2.9.0.post0
 pytz==2025.2
 requests==2.32.5
 rich==14.2.0
-scikit-learn==1.2.2
 scipy==1.16.2
 six==1.17.0
 smart-open==6.4.0
