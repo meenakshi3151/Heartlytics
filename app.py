@@ -81,6 +81,6 @@ if submitted:
     prediction = model.predict(input_df)[0]
     st.markdown("---")
     if prediction == 1:
-        st.error("🚨 **Heart Disease Detected!** Please consult a doctor for further evaluation.")
+        st.error("**Heart Disease Detected!** Please consult a doctor for further evaluation.")
     else:
-        st.success("✅ **No Heart Disease Detected.** Keep maintaining a healthy lifestyle!")
+        st.success("**No Heart Disease Detected.** Keep maintaining a healthy lifestyle!")
