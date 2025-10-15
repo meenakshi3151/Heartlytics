@@ -4,7 +4,6 @@ import pickle
 import joblib
 
 model = joblib.load("heart_disease_model.joblib")
-pickle.dump(model, open("model_repacked.pkl", "wb"), protocol=4)
 
 FEATURES = [
     'Age', 'Gender', 'Diabetes', 'Health-Insurance', 'Blood-Rel-Stroke',
