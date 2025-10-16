@@ -1,6 +1,6 @@
-#  CardioSense
+#  Hearlytics
 
-**CardioSense** is a web application built using **Streamlit** that predicts the risk of **heart disease** based on user-provided health parameters.
+**Hearlytics** is a web application built using **Streamlit** that predicts the risk of **heart disease** based on user-provided health parameters.
 
 
 ##  Features
@@ -74,7 +74,7 @@ Access the deployed site here:
 
 
 ##  Contributions
-We warmly welcome contributions to **CardioSense**!  
+We warmly welcome contributions to **Hearlytics**!  
 If you find any bugs, issues, or have ideas to enhance the project, please follow these steps:
 
 1. **Fork** the repository  
@@ -82,4 +82,4 @@ If you find any bugs, issues, or have ideas to enhance the project, please follo
 3. **Make your changes** and test thoroughly  
 4. **Submit a pull request** with a clear explanation of your contribution  
 
->  Every contribution—big or small—helps improve CardioSense and supports better heart health predictions!
+>  Every contribution—big or small—helps improve Hearlytics and supports better heart health predictions!
