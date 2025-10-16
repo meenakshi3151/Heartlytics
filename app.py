@@ -13,8 +13,8 @@ FEATURES = [
     'Red-Cell-Distribution-Width', 'X60-sec-pulse', 'HDL', 'Diastolic',
     'Systolic', 'Monocyte', 'Eosinophils'
 ]
-st.set_page_config(page_title="CardioSense", layout="centered")
-st.title("CardioSense")
+st.set_page_config(page_title="Heartlytics", layout="centered")
+st.title("Heartlytics")
 st.markdown("### Predict Heart Disease Risk based on Health Parameters")
 with st.form("heart_disease_form"):
     col1, col2 = st.columns(2)
