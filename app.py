@@ -5,7 +5,7 @@ import joblib
 model = joblib.load("xgbm_model_with_tuned_params.pkl")
 
 FEATURES = [
-    'Age', 'Systolic', 'Diastolic', 'Pulse_Pressure', 'Lymphocyte',
+    'Age', 'Systolic', 'Pulse Pressure', 'Lymphocyte',
     'Platelet-count', 'Cholesterol', 'Creatinine', 'Glucose', 
     'Glycohemoglobin'
 ]
@@ -21,8 +21,8 @@ with st.form("heart_disease_form"):
         Age = st.number_input("Age", min_value=1, max_value=120)
         Systolic = st.number_input("Systolic BP", min_value=50, max_value=250)
         Diastolic = st.number_input("Diastolic BP", min_value=30, max_value=150)
-        Lymphocyte = st.number_input("Lymphocyte Count", min_value=0.0, step=0.1)
-        Platelet_count = st.number_input("Platelet Count", min_value=0.0, step=1.0)
+        Lymphocyte = st.number_input("Lymphocyte Count", min_value=0)
+        Platelet_count = st.number_input("Platelet Count", min_value=0)
 
     with col2:
         Cholesterol = st.number_input("Cholesterol (mg/dL)", min_value=0.0, step=1.0)
@@ -30,7 +30,7 @@ with st.form("heart_disease_form"):
         Glucose = st.number_input("Glucose (mg/dL)", min_value=0.0, step=0.1)
         Glycohemoglobin = st.number_input("Glycohemoglobin (%)", min_value=0.0, step=0.1)
 
-    submitted = st.form_submit_button("🔍 Predict")
+    submitted = st.form_submit_button("Predict")
 
 if submitted:
     
@@ -39,8 +39,7 @@ if submitted:
     data = {
         'Age': Age,
         'Systolic': Systolic,
-        'Diastolic': Diastolic,
-        'Pulse_Pressure': Pulse_Pressure,
+        'Pulse Pressure': Pulse_Pressure,
         'Lymphocyte': Lymphocyte,
         'Platelet-count': Platelet_count,
         'Cholesterol': Cholesterol,
